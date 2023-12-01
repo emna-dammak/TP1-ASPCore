@@ -1,0 +1,10 @@
+@model ASPCoreAppication2023.ViewModels.MovieCustomerViewModel
+
+<h2>Movie Details</h2>
+<p>@Model.Movie.Name</p>
+
+<h2>Customer List</h2>
+@foreach (var customer in Model.Customers)
+{
+    <p>@customer.Name</p>
+}
